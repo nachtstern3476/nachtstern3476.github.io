@@ -1,0 +1,60 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap');
+
+*{
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+input{
+    display: none;
+}
+
+input:checked ~ ul{
+    display: block;
+}
+li, a{
+    list-style-type: none;
+    text-decoration: none;
+    padding: .8rem 0;
+    cursor: pointer;
+    color: #fff;
+}
+
+
+
+ul{
+    display: none;
+    padding: .8rem 1rem;
+    background: #000;
+}
+li{
+    font-weight: 800;
+    font-size: 1rem;
+}
+
+.toggler{
+    display: flex;
+    align-self: center;
+    justify-content: flex-end;
+    background: transparent;
+    border: 2px solid #000;
+    border-radius: 2px;
+    width: min-content;
+}
+
+.toggler .toggler-icon{
+    display: block;
+    width: 32px;
+    height: 32px;
+    background: url(../img/menu.svg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
