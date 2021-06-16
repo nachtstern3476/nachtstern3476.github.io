@@ -4,122 +4,154 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="./assets/css/style.css">
     <title>Yeremia Wijaya - Portfolio</title>
 </head>
 <body>
-    <header>
-        <input type="checkbox" id="toggler">
-        <div class="toggler" type="button">
-            <label for="toggler" class="toggler-icon"></label>
-        </div>
-        <nav>
-            <ul>
-                <li><a href="#about">About Me</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#project">Project</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
-    </header>
-    <main>
-        <section id="home">
-            <h1>Henlo There.</h1>
-            <p>Im a Web Developer</p>
-        </section>
-        <section id="about">
-            <img src="./assets/img/profile.svg" alt="photo-profile">
-            <div class="content">
-                <h3>About Me</h3>
-                <p>
-                    I am a Fullstack Web Developer recently graduated from vocational high school. 
-                    I have 1 year internship experience as Fullstack Developer at Elecomp Software House. 
-                    Thanks to that i was able to gain a lot of experience especialy on knowing how to 
-                    work together in a team.
-                </p>
-            </div>
-        </section>
-        <section id="skills">
-            <h3>My Skills</h3>
-            <div class="skills-wrapper">
-                <div class="skill">
-                    <div class="skill-content">
-                        <div class="skill-text">Html</div>
-                        <div class="skill-percentage">90%</div>
-                    </div>
-                    <div class="skill-bar"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-content">
-                        <div class="skill-text">Css</div>
-                        <div class="skill-percentage">85%</div>
-                    </div>
-                    <div class="skill-bar"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-content">
-                        <div class="skill-text">Javascript</div>
-                        <div class="skill-percentage">85%</div>
-                    </div>
-                    <div class="skill-bar"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-content">
-                        <div class="skill-text">Node Js</div>
-                        <div class="skill-percentage">70%</div>
-                    </div>
-                    <div class="skill-bar"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-content">
-                        <div class="skill-text">Php</div>
-                        <div class="skill-percentage">89%</div>
-                    </div>
-                    <div class="skill-bar"></div>
-                </div>
-                <div class="skill">
-                    <div class="skill-content">
-                        <div class="skill-text">Ui/Ux Design</div>
-                        <div class="skill-percentage">80%</div>
-                    </div>
-                    <div class="skill-bar"></div>
-                </div>
-            </div>
-        </section>
-        <section id="project">
-            <h3>My Skills</h3>
-            <div class="project-wrapper">
-                <div class="project">
-                    <img src="./assets/img/project1.svg" alt="project1">
-                    <div class="project-content">
-                        <p class="project-text">Covid 19 - Education Website</p>
-                        <a href="#" class="project-link">Visit</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="./assets/img/project2.svg" alt="project1">
-                    <div class="project-content">
-                        <p class="project-text">Book Shelf Management Website</p>
-                        <a href="#" class="project-link">Visit</a>
-                    </div>
-                </div>
-                <div class="project">
-                    <img src="./assets/img/project2.svg" alt="project1">
-                    <div class="project-content">
-                        <p class="project-text">Book Shelf Management Website</p>
-                        <a href="#" class="project-link">Visit</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-        <section id="contact">
-            <h3>My Contact</h3>
-            <div class="contact-wrapper">
-                <a href="#" class="button"><img src="./assets/img/sc_instagram.svg" alt="instagram-ic"></a>
-                <a href="#" class="button"><img src="./assets/img/sc_linkedin.svg" alt="linkedin-ic"></a>
-            </div>
-        </section>
-    </main>
-    <footer><div class="footer">© 2021 Yeremia Wijaya</div></footer>
+	<header>
+		<nav class="navbar fixed-top navbar-expand-lg navbar-light bg-dark py-2 py-sm-3">
+			<div class="container">
+				<div class="w-100 row no-gutters px-2 justify-content-end">
+					<button class="navbar-toggler border-0 px-1 collapsed" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span>
+					</button>
+					<div class="navbar-collapse justify-content-end collapse" id="navbar" style="">
+						<ul class="navbar-nav my-3 my-lg-0 bg-dark">
+							<li class="nav-item"><a class="nav-link" href="#about">About Me</a></li>
+			                <li class="nav-item"><a class="nav-link" href="#skill">Skills</a></li>
+			                <li class="nav-item"><a class="nav-link" href="#project">Project</a></li>
+			                <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</nav>
+	</header>
+	<main>
+		<section id="hero">
+			<div class="container h-100 text-center d-flex flex-column justify-content-center align-items-center">
+				<h1>Henlo There.</h1>
+            	<p>Im a Web Developer</p>				
+			</div>
+		</section>
+		<section id="about">
+			<div class="container">
+				<div class="row row-cols-1 row-cols-md-2">
+					<div class="col">
+						<img class="img-fluid" src="./assets/img/profile.svg" alt="photo-profile">
+					</div>
+					<div class="col">
+						<div class="text-wrapper">
+                    		<p>About Me </p>
+                    		<span></span>
+                		</div>
+                		<p>
+                    		I am a Fullstack Web Developer recently graduated from vocational high school. 
+                    		I have 1 year internship experience as Fullstack Developer at Elecomp Software House. 
+                    		Thanks to that i was able to gain a lot of experience especialy on knowing how to 
+                    		work together in a team.
+                		</p>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="skill">
+			<div class="container">
+				<div class="text-wrapper">
+	                <p>My Skills </p>
+	                <span></span>
+	            </div>
+				<div class="row row-cols-1 row-cols-md-2 justify-content-between">
+					<div class="col">
+						<div class="skill-wrapper">
+							<div class="title">Hard Skills</div>
+							<div class="row justify-content-center skill-list skill-text">
+								<div class="col-auto text-center skill-item">HTML</div>
+								<div class="col-auto text-center skill-item">CSS</div>
+								<div class="col-auto text-center skill-item">Js</div>
+								<div class="col-auto text-center skill-item">PHP</div>
+								<div class="col-auto text-center skill-item">NODE JS</div>
+								<div class="col-auto text-center skill-item">GIT</div>
+								<div class="col-auto text-center skill-item">CODEIGNITER</div>
+								<div class="col-auto text-center skill-item">UI/UX DESIGN</div>
+							</div>
+						</div>
+					</div>
+					<div class="col">
+						<div class="skill-wrapper">
+							<div class="title">Hard Skills</div>
+							<div class="row skill-list justify-content-center skill-text">
+								<div class="col-auto text-center skill-item">CREATIVE</div>
+								<div class="col-auto text-center skill-item">RESPONSIBLE</div>
+								<div class="col-auto text-center skill-item">TEAM WORK</div>
+								<div class="col-auto text-center skill-item">TIME MANAGEMENT</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+		<section id="project">
+			<div class="container">
+				<div class="text-wrapper">
+                	<p>My Projects </p>
+	                <span></span>
+            	</div>
+            	<div class="row row-cols-1 row-cols-lg-2">
+            		<div class="col align-content-end">
+            			<div class="image-wrapper">
+							<img class="img-fluid" src="./assets/img/img1.svg"></img>
+						</div>
+						<div class="info-wrapper d-flex justify-content-between">
+							<p>Nachtcoffe - Landing Page</p>
+							<a class="p-0" href="https://nachtstern3476.github.io/nachtcoffe/" target="_blank"><img src="./assets/img/sc_open.svg" alt="ic"></a>
+						</div>
+					</div>
+					<div class="col align-content-end">
+						<div class="image-wrapper">
+							<img class="img-fluid" src="./assets/img/img3.svg"></img>
+						</div>
+						<div class="info-wrapper d-flex justify-content-between">
+							<p>Covid-19 Info</p>
+							<a class="p-0" href="https://info-covid-19.web.app/" target="_blank"><img src="./assets/img/sc_open.svg" alt="ic"></a>
+						</div>
+					</div>
+					<div class="col align-content-end">
+						<div class="image-wrapper">
+							<img class="img-fluid" src="./assets/img/img2.svg"></img>
+						</div>
+						<div class="info-wrapper d-flex justify-content-between">
+							<p>Bookshelf Management</p>
+							<a class="p-0" href="https://nachtstern3476.github.io/BookShelfManagement/" target="_blank"><img src="./assets/img/sc_open.svg" alt="ic"></a>
+						</div>
+					</div>
+            	</div>
+			</div>
+		</section>
+		<section id="contact">
+			<div class="container">
+				<div class="text-wrapper">
+                	<p>Contact </p>
+	                <span></span>
+            	</div>
+				<div class="row row-cols-1">
+					<div class="col">
+						<p>For business please send email to <a href="mailto:yeremiawijaya2@gmail.com" rel="nofollow noopener noreferrer">yeremiawijaya2@gmail.com</a></p>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col">
+					<div class="copyright" style="visibility: visible;">© 2021 Yeremia Wijaya</div>
+				</div>
+			</div>
+		</div>
+	</footer>
 </body>
+<script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript" src="./assets/js/bootstrap.min.js"></script>
 </html>
